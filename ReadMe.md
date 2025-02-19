@@ -1,6 +1,6 @@
 # Crypto Dashboard
 
-A cross-platform (Web, iOS, Android) cryptocurrency tracking application built with React Native and Expo. Features real-time price updates, historical data visualization, and a beautiful glass-morphism UI design.
+A cross-platform (Web, iOS, Android) cryptocurrency tracking application built with React Native and Expo. Features real-time price updates, historical data visualization, and an aesthetic glass-morphism UI design.
 
 ## Features
 
