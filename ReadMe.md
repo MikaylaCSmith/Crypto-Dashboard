@@ -37,15 +37,6 @@ A cross-platform (Web, iOS, Android) cryptocurrency tracking application built w
 2. Install dependencies:
 
 
-## Project Structure
-├── components/ Reusable UI components
-├── contexts/ React Context providers
-├── screens/ Application screens
-├── services/ API and other services
-├── styles/ Global styles
-└── App.js  Application entry point
-
-
 ## API Integration
 
 The application uses the CoinGecko API for cryptocurrency data. API calls are managed through the cryptoApi service with built-in retry logic for rate limiting.
