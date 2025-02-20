@@ -13,6 +13,13 @@ A cross-platform (Web, iOS, Android) cryptocurrency tracking application built w
 - 📈 Historical price data visualization
 - 🔄 Pull-to-refresh functionality
 
+## Gallery
+## Gallery
+![Dashboard - Dark Mode](dash.png)
+![Dashboard - Light Mode](dash2.png)
+![Details](screen.png)
+![Details](screen2.png)
+
 ## Tech Stack
 
 - React Native / Expo
