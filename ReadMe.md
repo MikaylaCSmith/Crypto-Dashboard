@@ -14,8 +14,8 @@ A cross-platform (Web, iOS, Android) cryptocurrency tracking application built w
 - 🔄 Pull-to-refresh functionality
 
 ## Gallery
+![Dashboard - Dark Mode](Dash.png)
 ![Dashboard - Light Mode](dash2.png)
-![Details](dash.png)
 ![Details](screen.png)
 ![Details](screen2.png)
 
