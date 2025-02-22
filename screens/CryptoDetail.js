@@ -9,10 +9,7 @@ import {
   Platform,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { 
-  FadeIn,
-  Layout 
-} from 'react-native-reanimated';
+import { Animated } from 'react-native';
 import PriceChart from '../components/PriceChart';
 import GlassCard from '../components/GlassCard';
 import { useTheme } from '../contexts/ThemeContext';
@@ -21,6 +18,7 @@ import { getHistoricalData } from '../services/cryptoApi';
 
 const { width } = Dimensions.get('window');
 
+// CryptoDetail is a functional component that displays detailed information about a specific cryptocurrency.
 const CryptoDetail = ({ route }) => {
   const { theme } = useTheme();
   const { name, id } = route.params;
@@ -54,7 +52,7 @@ const CryptoDetail = ({ route }) => {
   }, [id, timeframe]);
 
   // Simplified animations for web
-  const AnimatedView = Platform.OS === 'web' ? View : Animated.View;
+  const AnimatedView = View;
   const enteringAnimation = Platform.OS === 'web' ? undefined : FadeIn.duration(600);
 
   return (

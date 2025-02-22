@@ -1,13 +1,15 @@
 {
   "expo": {
-    "name": "neverHaveIEver",
-    "slug": "neverHaveIEver",
+    "name": "crypto-dashboard",
+    "slug": "crypto-dashboard",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "experiments": {
+      "newArchEnabled": true,
+      "tsconfigPaths": true
+    },
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,15 +18,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.cryptodashboard"
     },
-    "web": {
-      "favicon": "./assets/favicon.png",
-      "meta": {
-        "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-      }
-    }
+    "web": {}
   }
 }

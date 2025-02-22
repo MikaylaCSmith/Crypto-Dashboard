@@ -1,6 +1,9 @@
 import React from 'react';
 import { View, Text, Platform } from 'react-native';
 
+// WebChart is a functional component that renders a simple chart for web platforms.
+// It displays the latest data point from the provided data prop.
+
 const WebChart = ({ data, width, height, chartConfig }) => {
   const color = chartConfig?.color?.(1) || '#4BFF4B';
   

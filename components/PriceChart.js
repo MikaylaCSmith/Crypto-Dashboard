@@ -1,8 +1,30 @@
 import React from 'react';
 import { Platform, View, Text, Dimensions } from 'react-native';
 import { useTheme } from '../contexts/ThemeContext';
+import { Line } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+} from 'chart.js';
 
 const { width } = Dimensions.get('window');
+
+// Register ChartJS components
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 // Web version using Chart.js
 const WebChart = ({ data, loading }) => {
@@ -35,28 +57,6 @@ const WebChart = ({ data, loading }) => {
       </View>
     );
   }
-
-  const { Line } = require('react-chartjs-2');
-  const {
-    Chart: ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend
-  } = require('chart.js');
-
-  ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend
-  );
 
   const chartData = {
     labels: data.map(() => ''),

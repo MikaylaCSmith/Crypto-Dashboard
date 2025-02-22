@@ -25,6 +25,8 @@ const Dashboard = ({ navigation }) => {
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState(null);
 
+  // fetchData is an asynchronous function that retrieves cryptocurrency data
+  // from an API. It formats the data and sets it to the cryptoData state.
   const fetchData = async () => {
     try {
       const data = await getCryptoData();
@@ -62,8 +64,7 @@ const Dashboard = ({ navigation }) => {
     });
   }, [navigation]);
 
-  const isWeb = Platform.OS === 'web';
-  const AnimatedView = isWeb ? View : Animated.View;
+  const AnimatedView = View;
 
   if (loading) {
     return (

@@ -8,6 +8,10 @@ const RETRY_DELAY = 1000;
 
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// fetchWithRetry is an asynchronous function that attempts to fetch data.
+// If the request fails due to a rate limit error, it will retry the request up to a 
+// specified number of times (MAX_RETRIES), with a delay between
+
 const fetchWithRetry = async (url, options, retries = MAX_RETRIES) => {
   try {
     const response = await axios.get(url, options);
@@ -20,6 +24,9 @@ const fetchWithRetry = async (url, options, retries = MAX_RETRIES) => {
     throw error;
   }
 };
+
+// getCryptoData is an asynchronous function that fetches the current market data for cryptocurrencies
+// from the CoinGecko API. It retrieves data for the top 20 cryptocurrencies in USD. 
 
 export const getCryptoData = async () => {
   try {

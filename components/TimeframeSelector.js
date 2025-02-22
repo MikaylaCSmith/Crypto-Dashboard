@@ -3,6 +3,8 @@ import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { useTheme } from '../contexts/ThemeContext';
 import { TIMEFRAMES } from '../services/cryptoApi';
 
+// TimeframeSelector is a functional component that renders a set of buttons for selecting different timeframes. 
+
 const TimeframeSelector = ({ selectedTimeframe, onTimeframeChange }) => {
   const { theme } = useTheme();
 

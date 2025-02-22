@@ -2,6 +2,8 @@ import React from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { useTheme } from '../contexts/ThemeContext';
 
+
+// GlassCard is a functional component that renders a card with a glass-like effect.
 const GlassCard = ({ children, style }) => {
   const { theme } = useTheme();
   const isWeb = Platform.OS === 'web';

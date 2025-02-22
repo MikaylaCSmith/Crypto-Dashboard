@@ -3,6 +3,7 @@ import { TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../contexts/ThemeContext';
 
+// ThemeToggle is a functional component that provides a button to toggle between light and dark mode. 
 const ThemeToggle = () => {
   const { isDark, toggleTheme, theme } = useTheme();
 

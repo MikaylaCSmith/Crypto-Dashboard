@@ -4,13 +4,13 @@ export const globalStyles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#AB7878', // Main background color
+    backgroundColor: '#AB7878', 
   },
   title: {
     fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#474747', // Dark gray for text
+    color: '#474747', 
   },
   button: {
     backgroundColor: '#000000',
